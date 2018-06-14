@@ -1,0 +1,142 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{listings}
+
+\let\<\textless
+\let\>\textgreater
+
+\graphicspath{ {images/} }
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Proyecto \#2}
+\rfoot{P\'agina \thepage}
+
+\begin{document}
+\begin{titlepage}
+  \centering
+  {\scshape\LARGE Instituto Tecnol\'ogico de Costa Rica \par}
+  \vspace{1cm}
+  {\scshape\Large Proyecto \#2\par}
+  \vspace{1.5cm}
+  {\Large\itshape Luis Castillo\par}
+  {\Large\itshape Janis Cervantes\par}
+  {\Large\itshape Sa\'ul Zamora\par}
+  \vfill
+  profesor\par
+  Kevin Moraga \textsc{}
+
+  \vfill
+
+% Bottom of the page
+  % {\large \today\par}
+\end{titlepage}
+
+\section{Introducci\'on}
+Se debe realizar la re-implementaci\'on de algunas de las funcionalidades de un sistema de archivos en el espacio de usuario del sistema operativo GNU/Linux. En concreto, se debe implementar el sistema de archivos HRFS, el cual es un sistema de cinta que tiene como objetivo ser un coleccionador de im\'agenes (o archivos en general) como si fuera un micro film.
+
+\section{Ambiente de desarrollo}
+\begin{itemize}
+  \item M\'aquina virtual: VMware Workstation 14 Pro
+  \item Sistema operativo utilizado: Linux Ubuntu 17.10 LTS
+  \item gcc (Ubuntu 7.2.0-8ubuntu3.2) 7.2.0
+\end{itemize}
+
+\section{Estructuras de datos usadas y funciones}
+\subsection{Librer\'ia FUSE}
+Se realiz\'o una reimplementaci\'on de la bilbioteca de pthreads, con las siguientes funciones:
+
+\begin{itemize}
+  \item getattr
+  \item open
+  \item read
+  \item write
+  \item rename
+  \item mkdir
+  \item readdir
+  \item opendir
+  \item rmdir
+  \item statfs
+  \item fsync
+  \item access
+  \item create
+  \item unlink
+\end{itemize}
+
+\section{Instrucciones de ejecuci\'on}
+\subsection{Compilaci\'on}
+El sistema usa autoherramientas de GNU para la configuraci\'on. Para compilar el programa, se siguen los siguientes pasos:
+\begin{itemize}
+  \item Configurar:
+  \begin{itemize}
+    \item \emph{./configure}
+  \end{itemize}
+  \item Make:
+  \begin{itemize}
+    \item \emph{make}
+  \end{itemize}
+\end{itemize}
+
+\subsection{Montaje}
+El sistema de archivos HRFS se monta al correr el comando \emph{hrfs}. \emph{hrfs} tiene dos par\'ametros obligatorios: el directorio ra\'iz (el que contiene los datos originales) y el directorio de montaje. Este es el procedimiento usando el directorio \emph{example} incluido en el proyecto:
+
+\begin{itemize}
+  \item \emph{pwd}: Muestra el path del directorio actual.
+  \item \emph{ls -lR}: Muestra el contenido y los permisos del directorio actual.
+  \item \emph{../src/hrfs rootdir mountdir}: Monta el sistema de archivos.
+  \item \emph{ls -lR}: Muestra (nuevamente) el contenido y los permisos del directorio actual.
+\end{itemize}
+
+\subsection{Desmontaje}
+Para desmontar el sistema, se debe correr el comando: \emph{fusermount -u mountdir}
+\section{Bit\'acora de trabajo}
+\subsection{Sa\'ul Zamora}
+\begin{itemize}
+  \item 06-06-2018:
+  \begin{itemize}
+    \item 2 horas - Investigar sobre FUSE library.
+  \end{itemize}
+  \item 07-06-2018:
+  \begin{itemize}
+    \item 2 horas - Investigar sobre FUSE library.
+  \end{itemize}
+  \item 11-06-2018:
+  \begin{itemize}
+    \item 2 horas - Implementaci\'on inicial.
+  \end{itemize}
+  \item 13-04-2018:
+  \begin{itemize}
+    \item 2 horas - Refactor. Documentaci\'on.
+  \end{itemize}
+\end{itemize}
+Total de horas trabajadas: 8 horas.
+
+\subsection{Janis Cervantes}
+\begin{itemize}
+  \item
+\end{itemize}
+Total de horas trabajadas: X horas.
+
+\subsection{Luis Castillo}
+\begin{itemize}
+  \item
+\end{itemize}
+Total de horas trabajadas: X horas.
+
+\section{Comentarios finales}
+\begin{itemize}
+  \item 
+\end{itemize}
+
+\section{Conclusiones}
+\begin{itemize}
+  \item 
+\end{itemize}
+
+\begin{thebibliography}{99}
+  \bibitem{example} GitHub. (2018). fntlnz/fuse-example. [online] Available at: \texttt{https://github.com/fntlnz/fuse-example}
+  \bibitem{library} GitHub. (2018). libfuse/libfuse. [online] Available at: \texttt{https://github.com/libfuse/libfuse}
+  \bibitem{tutorial1} Cs.nmsu.edu. (2018). Writing a FUSE Filesystem: a Tutorial. [online] Available at: \texttt{https://www.cs.nmsu.edu/\~{}pfeiffer/fuse-tutorial/}
+  \bibitem{tutorial2} Engineering.facile.it. (2018). Write a filesystem with FUSE. [online] Available at: \texttt{https://engineering.facile.it/blog/eng/write-filesystem-fuse/}
+\end{thebibliography}
+\end{document}
