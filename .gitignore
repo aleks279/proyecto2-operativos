@@ -6,3 +6,6 @@ install_manifest.txt
 compile_commands.json
 bin/
 lib/
+
+autom4te.cache
+html/
