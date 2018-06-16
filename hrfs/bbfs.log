@@ -1,0 +1,1594 @@
+
+hrfs_init()
+    conn:
+    proto_major = 7
+    proto_minor = 26
+    async_read = 1
+    max_write = 131072
+    max_readahead = 131072
+    capable = 00000ffb
+    want = 00000010
+    max_background = 0
+    congestion_threshold = 0
+    context:
+    fuse = 3cb55500
+    uid = 0
+    gid = 0
+    pid = 0
+    private_data = 3cb54010
+    logfile = 3cb55040
+    rootdir = /home/eddy/proyecto2-SO/HRFS/hrfs/rootdir
+    umask = 00000
+
+hrfs_access(path="/", mask=04)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+
+hrfs_getattr(path="/.Trash", statbuf=0xcbff8c90)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/.Trash", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/.Trash"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+hrfs_getattr(path="/.Trash-1000", statbuf=0xcc7f9c90)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/.Trash-1000", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/.Trash-1000"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+hrfs_getattr(path="/BDMV", statbuf=0xcbff8c90)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/BDMV", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/BDMV"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+
+hrfs_opendir(path="/", fi=0xcc7f9c80)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    opendir returned 0x0x7fa2c4001e40
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c4001e40
+    lock_owner = 0x0000000000000000
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+hrfs_getattr(path="/", statbuf=0xcbff8c60)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 66306
+    st_ino = 10619581
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5b25615d
+    st_mtime = 0x5b229825
+    st_ctime = 0x5b229825
+
+hrfs_getattr(path="/.xdg-volume-info", statbuf=0xcc7f9c90)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/.xdg-volume-info", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/.xdg-volume-info"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+hrfs_getattr(path="/autorun.inf", statbuf=0xcb7f7c90)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/autorun.inf", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/autorun.inf"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+hrfs_readdir(path="/", buf=0xc4001cb0, filler=0xccfc3c40, offset=0, fi=0xcbff8c80)
+    readdir returned 0x0x7fa2c4001e70
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2c4001e40
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c4001e40
+    lock_owner = 0x0000000000000000
+
+hrfs_getattr(path="/bogus.txt", statbuf=0xcb7f7c90)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/bogus.txt", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/bogus.txt"
+    lstat returned 0
+    si:
+    st_dev = 66306
+    st_ino = 10619582
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 11
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5b2413ed
+    st_mtime = 0x5b256567
+    st_ctime = 0x5b256567
+
+hrfs_releasedir(path="/", fi=0xcb7f7c90)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2c4001e40
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c4001e40
+    lock_owner = 0x0000000000000000
+
+hrfs_opendir(path="/", fi=0xcc7f9c80)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    opendir returned 0x0x7fa2c4001e40
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c4001e40
+    lock_owner = 0x0000000000000000
+
+hrfs_getattr(path="/", statbuf=0xcbff8c60)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 66306
+    st_ino = 10619581
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5b25615d
+    st_mtime = 0x5b229825
+    st_ctime = 0x5b229825
+
+hrfs_readdir(path="/", buf=0xc4001cb0, filler=0xccfc3c40, offset=0, fi=0xcb7f7c80)
+    readdir returned 0x0x7fa2c4001e70
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2c4001e40
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c4001e40
+    lock_owner = 0x0000000000000000
+
+hrfs_releasedir(path="/", fi=0xcb7f7c90)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2c4001e40
+    writepage = 0
+    direct_io = 0
+
+hrfs_opendir(path="/", fi=0xcc7f9c80)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    opendir returned 0x0x7fa2c4009f90
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c4009f90
+    lock_owner = 0x0000000000000000
+    keep_cache = 0
+    fh = 0x00007fa2c4001e40
+    lock_owner = 0x0000000000000000
+
+hrfs_getattr(path="/", statbuf=0xcb7f7c60)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 66306
+    st_ino = 10619581
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5b25615d
+    st_mtime = 0x5b229825
+    st_ctime = 0x5b229825
+
+hrfs_readdir(path="/", buf=0xc4001d30, filler=0xccfc3c40, offset=0, fi=0xcc7f9c80)
+    readdir returned 0x0x7fa2c4009fc0
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2c4009f90
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c4009f90
+    lock_owner = 0x0000000000000000
+
+hrfs_releasedir(path="/", fi=0xcc7f9c90)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2c4009f90
+    writepage = 0
+
+hrfs_opendir(path="/", fi=0xcbff8c80)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c4009f90
+    lock_owner = 0x0000000000000000
+    opendir returned 0x0x7fa2bc000b20
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc000b20
+    lock_owner = 0x0000000000000000
+
+hrfs_getattr(path="/", statbuf=0xcb7f7c60)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 66306
+    st_ino = 10619581
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5b25615d
+    st_mtime = 0x5b229825
+    st_ctime = 0x5b229825
+
+hrfs_readdir(path="/", buf=0xbc000990, filler=0xccfc3c40, offset=0, fi=0xcc7f9c80)
+    readdir returned 0x0x7fa2bc000b50
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2bc000b20
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc000b20
+    lock_owner = 0x0000000000000000
+
+hrfs_releasedir(path="/", fi=0xcc7f9c90)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2bc000b20
+    writepage = 0
+    direct_io = 0
+
+hrfs_opendir(path="/", fi=0xcbff8c80)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    keep_cache = 0
+    opendir returned 0x0x7fa2bc008c70
+    fi:
+    fh = 0x00007fa2bc000b20
+    lock_owner = 0x0000000000000000
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc008c70
+    lock_owner = 0x0000000000000000
+
+hrfs_getattr(path="/", statbuf=0xcb7f7c60)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 66306
+    st_ino = 10619581
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5b25615d
+    st_mtime = 0x5b229825
+    st_ctime = 0x5b229825
+
+hrfs_readdir(path="/", buf=0xbc000a10, filler=0xccfc3c40, offset=0, fi=0xcc7f9c80)
+    readdir returned 0x0x7fa2bc008ca0
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2bc008c70
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc008c70
+    lock_owner = 0x0000000000000000
+
+hrfs_releasedir(path="/", fi=0xcc7f9c90)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2bc008c70
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+
+hrfs_opendir(path="/", fi=0xcbff8c80)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    fh = 0x00007fa2bc008c70
+    lock_owner = 0x0000000000000000
+    opendir returned 0x0x7fa2bc000ba0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc000ba0
+    lock_owner = 0x0000000000000000
+
+hrfs_getattr(path="/", statbuf=0xcb7f7c60)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 66306
+    st_ino = 10619581
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5b25615d
+    st_mtime = 0x5b229825
+    st_ctime = 0x5b229825
+
+hrfs_readdir(path="/", buf=0xbc000990, filler=0xccfc3c40, offset=0, fi=0xcc7f9c80)
+    readdir returned 0x0x7fa2bc000bd0
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2bc000ba0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc000ba0
+    lock_owner = 0x0000000000000000
+
+hrfs_releasedir(path="/", fi=0xcc7f9c90)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2bc000ba0
+    writepage = 0
+
+hrfs_opendir(path="/", fi=0xcbff8c80)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc000ba0
+    lock_owner = 0x0000000000000000
+    opendir returned 0x0x7fa2bc008be0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc008be0
+    lock_owner = 0x0000000000000000
+
+hrfs_getattr(path="/", statbuf=0xcb7f7c60)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 66306
+    st_ino = 10619581
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5b25615d
+    st_mtime = 0x5b229825
+    st_ctime = 0x5b229825
+
+hrfs_readdir(path="/", buf=0xbc000a10, filler=0xccfc3c40, offset=0, fi=0xcc7f9c80)
+    readdir returned 0x0x7fa2bc008c10
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2bc008be0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc008be0
+    lock_owner = 0x0000000000000000
+
+hrfs_releasedir(path="/", fi=0xcc7f9c90)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2bc008be0
+    writepage = 0
+
+hrfs_opendir(path="/", fi=0xcbff8c80)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc008be0
+    lock_owner = 0x0000000000000000
+    opendir returned 0x0x7fa2bc000ba0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc000ba0
+    lock_owner = 0x0000000000000000
+
+hrfs_getattr(path="/", statbuf=0xcb7f7c60)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 66306
+    st_ino = 10619581
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5b25615d
+    st_mtime = 0x5b229825
+    st_ctime = 0x5b229825
+
+hrfs_readdir(path="/", buf=0xbc000990, filler=0xccfc3c40, offset=0, fi=0xcc7f9c80)
+    readdir returned 0x0x7fa2bc000bd0
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2bc000ba0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc000ba0
+    lock_owner = 0x0000000000000000
+
+hrfs_releasedir(path="/", fi=0xcc7f9c90)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2bc000ba0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc000ba0
+    lock_owner = 0x0000000000000000
+
+hrfs_opendir(path="/", fi=0xcbff8c80)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    opendir returned 0x0x7fa2bc000ba0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc000ba0
+    lock_owner = 0x0000000000000000
+
+hrfs_getattr(path="/", statbuf=0xcb7f7c60)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 66306
+    st_ino = 10619581
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5b25615d
+    st_mtime = 0x5b229825
+    st_ctime = 0x5b229825
+
+hrfs_readdir(path="/", buf=0xbc000a10, filler=0xccfc3c40, offset=0, fi=0xcc7f9c80)
+    readdir returned 0x0x7fa2bc000bd0
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2bc000ba0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc000ba0
+    lock_owner = 0x0000000000000000
+
+hrfs_releasedir(path="/", fi=0xcc7f9c90)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2bc000ba0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc000ba0
+    lock_owner = 0x0000000000000000
+
+hrfs_opendir(path="/", fi=0xcbff8c80)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    opendir returned 0x0x7fa2bc000ba0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc000ba0
+    lock_owner = 0x0000000000000000
+
+hrfs_getattr(path="/", statbuf=0xcb7f7c60)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 66306
+    st_ino = 10619581
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5b25615d
+    st_mtime = 0x5b229825
+    st_ctime = 0x5b229825
+
+hrfs_readdir(path="/", buf=0xbc000990, filler=0xccfc3c40, offset=0, fi=0xcc7f9c80)
+    readdir returned 0x0x7fa2bc000bd0
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2bc000ba0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc000ba0
+    lock_owner = 0x0000000000000000
+
+hrfs_releasedir(path="/", fi=0xcc7f9c90)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2bc000ba0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc000ba0
+    lock_owner = 0x0000000000000000
+
+hrfs_opendir(path="/", fi=0xcbff8c80)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    opendir returned 0x0x7fa2bc000ba0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc000ba0
+    lock_owner = 0x0000000000000000
+
+hrfs_getattr(path="/", statbuf=0xcb7f7c60)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 66306
+    st_ino = 10619581
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5b25615d
+    st_mtime = 0x5b229825
+    st_ctime = 0x5b229825
+
+hrfs_readdir(path="/", buf=0xbc000a10, filler=0xccfc3c40, offset=0, fi=0xcc7f9c80)
+    readdir returned 0x0x7fa2bc000bd0
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2bc000ba0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc000ba0
+    lock_owner = 0x0000000000000000
+
+hrfs_releasedir(path="/", fi=0xcc7f9c90)
+    fi:
+    flags = 0x00000000
+
+hrfs_opendir(path="/", fi=0xcbff8c80)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    fh_old = 0x7fa2bc000ba0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc000ba0
+    lock_owner = 0x0000000000000000
+    opendir returned 0x0x7fa2bc008be0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc008be0
+    lock_owner = 0x0000000000000000
+
+hrfs_getattr(path="/", statbuf=0xcb7f7c60)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 66306
+    st_ino = 10619581
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5b25615d
+    st_mtime = 0x5b229825
+    st_ctime = 0x5b229825
+
+hrfs_readdir(path="/", buf=0xbc000990, filler=0xccfc3c40, offset=0, fi=0xcc7f9c80)
+    readdir returned 0x0x7fa2bc008c10
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2bc008be0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc008be0
+    lock_owner = 0x0000000000000000
+
+hrfs_releasedir(path="/", fi=0xcc7f9c90)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2bc008be0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc008be0
+    lock_owner = 0x0000000000000000
+
+hrfs_opendir(path="/", fi=0xcbff8c80)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    opendir returned 0x0x7fa2bc000ba0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc000ba0
+    lock_owner = 0x0000000000000000
+
+hrfs_getattr(path="/", statbuf=0xcb7f7c60)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 66306
+    st_ino = 10619581
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5b25615d
+    st_mtime = 0x5b229825
+    st_ctime = 0x5b229825
+
+hrfs_readdir(path="/", buf=0xbc000a10, filler=0xccfc3c40, offset=0, fi=0xcc7f9c80)
+    readdir returned 0x0x7fa2bc000bd0
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2bc000ba0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc000ba0
+    lock_owner = 0x0000000000000000
+
+hrfs_releasedir(path="/", fi=0xcc7f9c90)
+
+hrfs_opendir(path="/", fi=0xcbff8c80)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2bc000ba0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc000ba0
+    lock_owner = 0x0000000000000000
+    opendir returned 0x0x7fa2bc008be0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc008be0
+    lock_owner = 0x0000000000000000
+
+hrfs_getattr(path="/", statbuf=0xcb7f7c60)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 66306
+    st_ino = 10619581
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5b25615d
+    st_mtime = 0x5b229825
+    st_ctime = 0x5b229825
+
+hrfs_readdir(path="/", buf=0xbc000990, filler=0xccfc3c40, offset=0, fi=0xcc7f9c80)
+    readdir returned 0x0x7fa2bc008c10
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2bc008be0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc008be0
+    lock_owner = 0x0000000000000000
+
+hrfs_releasedir(path="/", fi=0xcc7f9c90)
+    fi:
+    flags = 0x00000000
+
+hrfs_opendir(path="/", fi=0xcbff8c80)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    fh_old = 0x7fa2bc008be0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    opendir returned 0x0x7fa2bc000ba0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc000ba0
+    lock_owner = 0x0000000000000000
+    fh = 0x00007fa2bc008be0
+    lock_owner = 0x0000000000000000
+
+hrfs_getattr(path="/", statbuf=0xcb7f7c60)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 66306
+    st_ino = 10619581
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5b25615d
+    st_mtime = 0x5b229825
+    st_ctime = 0x5b229825
+
+hrfs_readdir(path="/", buf=0xbc000a10, filler=0xccfc3c40, offset=0, fi=0xcbff8c80)
+    readdir returned 0x0x7fa2bc000bd0
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2bc000ba0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc000ba0
+    lock_owner = 0x0000000000000000
+
+hrfs_releasedir(path="/", fi=0xcbff8c90)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2bc000ba0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc000ba0
+    lock_owner = 0x0000000000000000
+
+hrfs_opendir(path="/", fi=0xcc7f9c80)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    opendir returned 0x0x7fa2c4001e40
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c4001e40
+    lock_owner = 0x0000000000000000
+
+hrfs_getattr(path="/", statbuf=0xcb7f7c60)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 66306
+    st_ino = 10619581
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5b25615d
+    st_mtime = 0x5b229825
+    st_ctime = 0x5b229825
+
+hrfs_readdir(path="/", buf=0xc4001cb0, filler=0xccfc3c40, offset=0, fi=0xcbff8c80)
+    readdir returned 0x0x7fa2c4001e70
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2c4001e40
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c4001e40
+    lock_owner = 0x0000000000000000
+
+hrfs_releasedir(path="/", fi=0xcbff8c90)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2c4001e40
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c4001e40
+    lock_owner = 0x0000000000000000
+
+hrfs_opendir(path="/", fi=0xcc7f9c80)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    opendir returned 0x0x7fa2c4001db0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c4001db0
+    lock_owner = 0x0000000000000000
+
+hrfs_getattr(path="/", statbuf=0xcb7f7c60)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 66306
+    st_ino = 10619581
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5b25615d
+    st_mtime = 0x5b229825
+    st_ctime = 0x5b229825
+
+hrfs_readdir(path="/", buf=0xc4001d30, filler=0xccfc3c40, offset=0, fi=0xcbff8c80)
+    readdir returned 0x0x7fa2c4001de0
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2c4001db0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c4001db0
+    lock_owner = 0x0000000000000000
+
+hrfs_releasedir(path="/", fi=0xcbff8c90)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2c4001db0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c4001db0
+    lock_owner = 0x0000000000000000
+
+hrfs_opendir(path="/", fi=0xcc7f9c80)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    opendir returned 0x0x7fa2c4001d30
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c4001d30
+    lock_owner = 0x0000000000000000
+
+hrfs_getattr(path="/", statbuf=0xcb7f7c60)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 66306
+    st_ino = 10619581
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5b25615d
+    st_mtime = 0x5b229825
+    st_ctime = 0x5b229825
+
+hrfs_readdir(path="/", buf=0xc4001cb0, filler=0xccfc3c40, offset=0, fi=0xcbff8c80)
+    readdir returned 0x0x7fa2c4001d60
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2c4001d30
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c4001d30
+    lock_owner = 0x0000000000000000
+
+hrfs_releasedir(path="/", fi=0xcbff8c90)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2c4001d30
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c4001d30
+    lock_owner = 0x0000000000000000
+
+hrfs_opendir(path="/", fi=0xcc7f9c80)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    opendir returned 0x0x7fa2c4001cb0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c4001cb0
+    lock_owner = 0x0000000000000000
+
+hrfs_getattr(path="/", statbuf=0xcb7f7c60)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 66306
+    st_ino = 10619581
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5b25615d
+    st_mtime = 0x5b229825
+    st_ctime = 0x5b229825
+
+hrfs_readdir(path="/", buf=0xc4009d70, filler=0xccfc3c40, offset=0, fi=0xcbff8c80)
+    readdir returned 0x0x7fa2c4001ce0
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2c4001cb0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c4001cb0
+    lock_owner = 0x0000000000000000
+
+hrfs_releasedir(path="/", fi=0xcbff8c90)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2c4001cb0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c4001cb0
+    lock_owner = 0x0000000000000000
+
+hrfs_opendir(path="/", fi=0xcc7f9c80)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    opendir returned 0x0x7fa2c4001cb0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c4001cb0
+    lock_owner = 0x0000000000000000
+
+hrfs_getattr(path="/", statbuf=0xcb7f7c60)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 66306
+    st_ino = 10619581
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5b25615d
+    st_mtime = 0x5b229825
+    st_ctime = 0x5b229825
+
+hrfs_readdir(path="/", buf=0xc4009cf0, filler=0xccfc3c40, offset=0, fi=0xcbff8c80)
+    readdir returned 0x0x7fa2c4001ce0
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2c4001cb0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c4001cb0
+    lock_owner = 0x0000000000000000
+
+hrfs_releasedir(path="/", fi=0xcbff8c90)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2c4001cb0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c4001cb0
+    lock_owner = 0x0000000000000000
+
+hrfs_opendir(path="/", fi=0xcc7f9c80)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    opendir returned 0x0x7fa2c4001cb0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c4001cb0
+    lock_owner = 0x0000000000000000
+
+hrfs_getattr(path="/", statbuf=0xcb7f7c60)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 66306
+    st_ino = 10619581
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5b25615d
+    st_mtime = 0x5b229825
+    st_ctime = 0x5b229825
+
+hrfs_readdir(path="/", buf=0xc4009d70, filler=0xccfc3c40, offset=0, fi=0xcbff8c80)
+    readdir returned 0x0x7fa2c4001ce0
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2c4001cb0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c4001cb0
+    lock_owner = 0x0000000000000000
+
+hrfs_releasedir(path="/", fi=0xcbff8c90)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2c4001cb0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c4001cb0
+    lock_owner = 0x0000000000000000
+
+hrfs_opendir(path="/", fi=0xcc7f9c80)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    opendir returned 0x0x7fa2c4001cb0
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c4001cb0
+    lock_owner = 0x0000000000000000
+
+hrfs_getattr(path="/", statbuf=0xcb7f7c60)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 66306
+    st_ino = 10619581
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5b25615d
+    st_mtime = 0x5b229825
+    st_ctime = 0x5b229825
+
+hrfs_readdir(path="/", buf=0xc4009cf0, filler=0xccfc3c40, offset=0, fi=0xcbff8c80)
+    readdir returned 0x0x7fa2c4001ce0
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2c4001cb0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c4001cb0
+    lock_owner = 0x0000000000000000
+
+hrfs_releasedir(path="/", fi=0xcbff8c90)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2c4001cb0
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c4001cb0
+    lock_owner = 0x0000000000000000
+
+hrfs_opendir(path="/", fi=0xcc7f9c80)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    opendir returned 0x0x7fa2c4009d70
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c4009d70
+    lock_owner = 0x0000000000000000
+
+hrfs_getattr(path="/", statbuf=0xcb7f7c60)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 66306
+    st_ino = 10619581
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5b25615d
+    st_mtime = 0x5b229825
+    st_ctime = 0x5b229825
+
+hrfs_readdir(path="/", buf=0xc4009cf0, filler=0xccfc3c40, offset=0, fi=0xcbff8c80)
+    readdir returned 0x0x7fa2c4009da0
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2c4009d70
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c4009d70
+    lock_owner = 0x0000000000000000
+
+hrfs_releasedir(path="/", fi=0xcbff8c90)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2c4009d70
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c4009d70
+    lock_owner = 0x0000000000000000
+
+hrfs_getattr(path="/autorun.inf", statbuf=0xcc7f9c90)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/autorun.inf", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/autorun.inf"
+    lstat returned -1
+    ERROR lstat: No such file or directory
+    si:
+    st_dev = 0
+    st_ino = 0
+    st_mode = 00
+    st_nlink = 0
+    st_uid = 0
+    st_gid = 0
+    st_rdev = 0
+    st_size = 0
+    st_blksize = 0
+    st_blocks = 0
+    st_atime = 0x00000000
+    st_mtime = 0x00000000
+    st_ctime = 0x00000000
+
+hrfs_getattr(path="/", statbuf=0xcb7f7c60)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 66306
+    st_ino = 10619581
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5b25615d
+    st_mtime = 0x5b229825
+    st_ctime = 0x5b229825
+
+hrfs_getxattr(path = "/", name = "security.selinux", value = 0xbc000990, size = 255)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+hrfs_getxattr(path = "/", name = "system.posix_acl_access", value = 0x00000000, size = 0)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+hrfs_getxattr(path = "/", name = "system.posix_acl_default", value = 0x00000000, size = 0)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+hrfs_opendir(path="/", fi=0xcbff8c80)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    opendir returned 0x0x7fa2bc000b20
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc000b20
+    lock_owner = 0x0000000000000000
+
+hrfs_readdir(path="/", buf=0xbc000990, filler=0xccfc3c40, offset=0, fi=0xcc7f9c80)
+    readdir returned 0x0x7fa2bc000b50
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2bc000b20
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc000b20
+    lock_owner = 0x0000000000000000
+
+hrfs_getattr(path="/bogus.txt", statbuf=0xcb7f7c90)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/bogus.txt", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/bogus.txt"
+    lstat returned 0
+    si:
+    st_dev = 66306
+    st_ino = 10619582
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 11
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5b2413ed
+    st_mtime = 0x5b256567
+    st_ctime = 0x5b256567
+
+hrfs_getxattr(path = "/bogus.txt", name = "security.selinux", value = 0xbc000a10, size = 255)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/bogus.txt", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/bogus.txt"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+hrfs_getxattr(path = "/bogus.txt", name = "system.posix_acl_access", value = 0x00000000, size = 0)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/bogus.txt", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/bogus.txt"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+hrfs_releasedir(path="/", fi=0xcbff8c90)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2bc000b20
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2bc000b20
+    lock_owner = 0x0000000000000000
+
+hrfs_getattr(path="/", statbuf=0xcc7f9c60)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    lstat returned 0
+    si:
+    st_dev = 66306
+    st_ino = 10619581
+    st_mode = 040755
+    st_nlink = 2
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 4096
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5b25615d
+    st_mtime = 0x5b229825
+    st_ctime = 0x5b229825
+
+hrfs_getxattr(path = "/", name = "security.selinux", value = 0xc0000990, size = 255)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+hrfs_getxattr(path = "/", name = "system.posix_acl_access", value = 0x00000000, size = 0)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+hrfs_getxattr(path = "/", name = "system.posix_acl_default", value = 0x00000000, size = 0)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+hrfs_opendir(path="/", fi=0xcb7f7c80)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/"
+    opendir returned 0x0x7fa2c0000b20
+    fi:
+    flags = 0x00018800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c0000b20
+    lock_owner = 0x0000000000000000
+
+hrfs_readdir(path="/", buf=0xc0000990, filler=0xccfc3c40, offset=0, fi=0xcbff8c80)
+    readdir returned 0x0x7fa2c0000b50
+calling filler with name .
+calling filler with name ..
+calling filler with name bogus.txt
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2c0000b20
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c0000b20
+    lock_owner = 0x0000000000000000
+
+hrfs_getattr(path="/bogus.txt", statbuf=0xcc7f9c90)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/bogus.txt", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/bogus.txt"
+    lstat returned 0
+    si:
+    st_dev = 66306
+    st_ino = 10619582
+    st_mode = 0100644
+    st_nlink = 1
+    st_uid = 1000
+    st_gid = 1000
+    st_rdev = 0
+    st_size = 11
+    st_blksize = 4096
+    st_blocks = 8
+    st_atime = 0x5b2413ed
+    st_mtime = 0x5b256567
+    st_ctime = 0x5b256567
+
+hrfs_getxattr(path = "/bogus.txt", name = "security.selinux", value = 0xc0000a10, size = 255)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/bogus.txt", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/bogus.txt"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+hrfs_getxattr(path = "/bogus.txt", name = "system.posix_acl_access", value = 0x00000000, size = 0)
+    hrfs_fullpath:  rootdir = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir", path = "/bogus.txt", fpath = "/home/eddy/proyecto2-SO/HRFS/hrfs/rootdir/bogus.txt"
+    lgetxattr returned -1
+    ERROR lgetxattr: No data available
+
+hrfs_releasedir(path="/", fi=0xcb7f7c90)
+    fi:
+    flags = 0x00000000
+    fh_old = 0x7fa2c0000b20
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x00007fa2c0000b20
+    lock_owner = 0x0000000000000000
+
+hrfs_destroy(userdata=0x3cb54010)
