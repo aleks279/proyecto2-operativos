@@ -1,15 +1,3 @@
-/*
-  Copyright (C) 2012 Joseph J. Pfeiffer, Jr., Ph.D. <pfeiffer@cs.nmsu.edu>
-
-  This program can be distributed under the terms of the GNU GPLv3.
-  See the file COPYING.
-
-  Since the point of this filesystem is to learn FUSE and its
-  datastructures, I want to see *everything* that happens related to
-  its data structures.  This file contains macros and functions to
-  accomplish this.
-*/
-
 #include "params.h"
 
 #include <errno.h>
@@ -29,15 +17,15 @@ FILE *log_open()
 {
     FILE *logfile;
     
-    // very first thing, open up the logfile and mark that we got in
-    // here.  If we can't open the logfile, we're dead.
+    // Abrir el archivo de logs y marcar que se entro
+    // si no se puede abrir... we're fucked
     logfile = fopen("bbfs.log", "w");
     if (logfile == NULL) {
 	perror("logfile");
 	exit(EXIT_FAILURE);
     }
     
-    // set logfile to line buffering
+    // setear el buffering del logfile
     setvbuf(logfile, NULL, _IOLBF, 0);
 
     return logfile;
@@ -51,7 +39,7 @@ void log_msg(const char *format, ...)
     vfprintf(HRFS_DATA->logfile, format, ap);
 }
 
-// Report errors to logfile and give -errno to caller
+// reportar errores
 int log_error(char *func)
 {
     int ret = -errno;
@@ -66,36 +54,35 @@ void log_fuse_context(struct fuse_context *context)
 {
     log_msg("    context:\n");
     
-    /** Pointer to the fuse object */
+    /** puntero al objeto fuse */
     //	struct fuse *fuse;
     log_struct(context, fuse, %08x, );
 
-    /** User ID of the calling process */
+    /** User ID  que llamo el proceso */
     //	uid_t uid;
     log_struct(context, uid, %d, );
 
-    /** Group ID of the calling process */
+    /** Group ID que llamo el proceso */
     //	gid_t gid;
     log_struct(context, gid, %d, );
 
-    /** Thread ID of the calling process */
+    /** Thread ID que llamo el proceso */
     //	pid_t pid;
     log_struct(context, pid, %d, );
 
-    /** Private filesystem data */
+    /** datos del fs privado */
     //	void *private_data;
     log_struct(context, private_data, %08x, );
     log_struct(((struct hrfs_state *)context->private_data), logfile, %08x, );
     log_struct(((struct hrfs_state *)context->private_data), rootdir, %s, );
 	
-    /** Umask of the calling process (introduced in version 2.8) */
+    /** Umask que llamo el proceso */
     //	mode_t umask;
     log_struct(context, umask, %05o, );
 }
 
-// struct fuse_conn_info contains information about the socket
-// connection being used.  I don't actually use any of this
-// information in bbfs
+// struct fuse_conn_info sobre el socket y 
+// coneccion usada
 void log_conn(struct fuse_conn_info *conn)
 {
     log_msg("    conn:\n");
@@ -112,19 +99,19 @@ void log_conn(struct fuse_conn_info *conn)
     // unsigned async_read;
     log_struct(conn, async_read, %d, );
 
-    /** Maximum size of the write buffer */
+    /** tama;o maximo del write buffer */
     // unsigned max_write;
     log_struct(conn, max_write, %d, );
     
-    /** Maximum readahead */
+    /** Maximo readahead */
     // unsigned max_readahead;
     log_struct(conn, max_readahead, %d, );
     
-    /** Capability flags, that the kernel supports */
+    /** banderas de capacidad, soportadas por el kernel */
     // unsigned capable;
     log_struct(conn, capable, %08x, );
     
-    /** Capability flags, that the filesystem wants to enable */
+    /** banderas de capacidad, que el fs quiere habilitar */
     // unsigned want;
     log_struct(conn, want, %08x, );
     
@@ -132,7 +119,7 @@ void log_conn(struct fuse_conn_info *conn)
     // unsigned max_background;
     log_struct(conn, max_background, %d, );
     
-    /** Kernel congestion threshold parameter */
+    /** parametro del limite de congestion del kernel */
     // unsigned congestion_threshold;
     log_struct(conn, congestion_threshold, %d, );
     
@@ -140,10 +127,8 @@ void log_conn(struct fuse_conn_info *conn)
     // unsigned reserved[23];
 }
     
-// struct fuse_file_info keeps information about files (surprise!).
-// This dumps all the information in a struct fuse_file_info.  The struct
-// definition, and comments, come from /usr/include/fuse/fuse_common.h
-// Duplicated here for convenience.
+// struct fuse_file_info mantiene informacion sobre los archivos
+// Esto manda toda la info en el struct fuse_file_info.
 void log_fi (struct fuse_file_info *fi)
 {
     log_msg("    fi:\n");
@@ -191,8 +176,7 @@ void log_retstat(char *func, int retstat)
     errno = errsave;
 }
       
-// make a system call, checking (and reporting) return status and
-// possibly logging error
+// hace un system call, revisando y reportando estados retornados y posibles errores
 int log_syscall(char *func, int retstat, int min_ret)
 {
     log_retstat(func, retstat);
@@ -205,8 +189,7 @@ int log_syscall(char *func, int retstat, int min_ret)
     return retstat;
 }
 
-// This dumps the info from a struct stat.  The struct is defined in
-// <bits/stat.h>; this is indirectly included from <fcntl.h>
+// guarda la info del struct stat.
 void log_stat(struct stat *si)
 {
     log_msg("    si:\n");

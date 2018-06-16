@@ -230,12 +230,10 @@ int hrfs_fsync(const char *path, int datasync, struct fuse_file_info *fi)
 }
 
 #ifdef HAVE_SYS_XATTR_H
-/** Note that my implementations of the various xattr functions use
-    the 'l-' versions of the functions (eg hrfs_setxattr() calls
-    lsetxattr() not setxattr(), etc).  This is because it appears any
-    symbolic links are resolved before the actual call takes place, so
-    I only need to use the system-provided calls that don't follow
-    them */
+/** Notese que la implementacion de las funciones xattr usan la
+    version 'l-' de las funciones. Esto es porque parece que los symlinks se resuelven
+    antes de que se haga la llamada, entonces hay que usar las llamadas del sistema
+    para que no los sigan. */
 
 /** Modifcar atributos extendidos*/
 int hrfs_setxattr(const char *path, const char *name, const char *value, size_t size, int flags)
@@ -317,8 +315,7 @@ int hrfs_opendir(const char *path, struct fuse_file_info *fi)
 	  path, fi);
     hrfs_fullpath(fpath, path);
 
-    // since opendir returns a pointer, takes some custom handling of
-    // return status.
+    // como opendir retorna un puntero, se hace un custom handlig para retornar el status.
     dp = opendir(fpath);
     log_msg("    opendir returned 0x%p\n", dp);
     if (dp == NULL)
@@ -541,8 +538,7 @@ int main(int argc, char *argv[])
 	abort();
     }
 
-    // Pull the rootdir out of the argument list and save it in my
-    // internal data
+    // Sacar el directorio de origen de los argumentos y guardarlo en la data interna
     hrfs_data->rootdir = realpath(argv[argc-2], NULL);
     argv[argc-2] = argv[argc-1];
     argv[argc-1] = NULL;
@@ -550,7 +546,7 @@ int main(int argc, char *argv[])
     
     hrfs_data->logfile = log_open();
     
-    // turn over control to fuse
+    // pasar el control a fuse
     fprintf(stderr, "llamando a fuse_main\n");
     fuse_stat = fuse_main(argc, argv, &hrfs_oper, hrfs_data);
     fprintf(stderr, "fuse_main returned %d\n", fuse_stat);
