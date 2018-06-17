@@ -33,7 +33,7 @@
 \end{titlepage}
 
 \section{Introducci\'on}
-Se debe realizar la re-implementaci\'on de algunas de las funcionalidades de un sistema de archivos en el espacio de usuario del sistema operativo GNU/Linux. En concreto, se debe implementar el sistema de archivos HRFS, el cual es un sistema de cinta que tiene como objetivo ser un coleccionador de im\'agenes (o archivos en general) como si fuera un micro film.
+Se debe realizar la re-implementaci\'on de algunas de las funcionalidades de un sistema de archivos en el espacio de usuario del sistema operativo GNU/Linux. En concreto, se debe implementar el sistema de archivos HRFS. Esto incuye operaciones sobre archivos utilizando la librería fuse como: abrir, eliminar, renombrar, crear un directorio...etc. Este es un sistema de cinta que tiene como objetivo ser un coleccionador de im\'agenes (o archivos en general) como si fuera un micro film.
 
 \section{Ambiente de desarrollo}
 \begin{itemize}
@@ -47,20 +47,20 @@ Se debe realizar la re-implementaci\'on de algunas de las funcionalidades de un 
 Se realiz\'o una reimplementaci\'on de la bilbioteca de pthreads, con las siguientes funciones:
 
 \begin{itemize}
-  \item getattr
-  \item open
-  \item read
-  \item write
-  \item rename
-  \item mkdir
-  \item readdir
-  \item opendir
-  \item rmdir
-  \item statfs
-  \item fsync
-  \item access
-  \item create
-  \item unlink
+  \item getattr: retorna atributos de un archivo, rellenando la estructura del stat. 
+  \item open: abre un archivo 
+  \item read: lee contenido de archivo específico 
+  \item write: se escribe un archivo 
+  \item rename: se utiliza para renombrar un archivo 
+  \item mkdir: se utiliza para crear un directorio 
+  \item readdir: se utiliza para listar los archivos o directorios que están disponibles dentro de un directorio específico 
+  \item opendir: se utiliza para abrir un directorio 
+  \item rmdir:elimina un directorio 
+  \item statfs: obtener estadísicas del file system 
+  \item fsync: se utiliza para sincronizar los contenidos de un archivo 
+  \item access: chequear los permisos con los que cuenta un archivo 
+  \item create: crear un archivo en el código está como ftruncate 
+  \item unlink: eimina un archivo o lo desenlaza 
 \end{itemize}
 
 \section{Instrucciones de ejecuci\'on}
@@ -113,9 +113,12 @@ Total de horas trabajadas: 8 horas.
 
 \subsection{Janis Cervantes}
 \begin{itemize}
-  \item
+  \item investigación de librería fuse 15 h
+  \item ejecución y pruebas de librería 12 h
+  \item documentación 2 h
+  \item investigación de mount fsck mkfs 10 h
 \end{itemize}
-Total de horas trabajadas: X horas.
+Total de horas trabajadas: 39 horas.
 
 \subsection{Luis Castillo}
 \begin{itemize}
@@ -130,7 +133,8 @@ Total de horas trabajadas: X horas.
 
 \section{Conclusiones}
 \begin{itemize}
-  \item 
+  \item Se lograron implementar la librería de las operaciones fuse y montar el sistema de archivos, si se utiliza el comando df se puede ver los puntos de montaje y el tipo de file system que tiene por lo que sí se pudo montar correctamente ya que el sistema operativo lo reconoce como este. 
+  /item Se logró entender mejor el funcionamiento de un sistema de archivos de la estructura de las operaciones de los comandos que usamos al manipular estos. 
 \end{itemize}
 
 \begin{thebibliography}{99}
