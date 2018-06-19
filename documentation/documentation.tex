@@ -94,11 +94,11 @@ Para desmontar el sistema, se debe correr el comando: \emph{fusermount -u mountd
 \begin{itemize}
   \item 06-06-2018:
   \begin{itemize}
-    \item 2 horas - Investigar sobre FUSE library.
+    \item 4 horas - Investigar sobre FUSE library.
   \end{itemize}
   \item 07-06-2018:
   \begin{itemize}
-    \item 2 horas - Investigar sobre FUSE library.
+    \item 4 horas - Investigar sobre FUSE library.
   \end{itemize}
   \item 11-06-2018:
   \begin{itemize}
@@ -106,10 +106,18 @@ Para desmontar el sistema, se debe correr el comando: \emph{fusermount -u mountd
   \end{itemize}
   \item 13-04-2018:
   \begin{itemize}
-    \item 2 horas - Refactor. Documentaci\'on.
+    \item 4 horas - Refactor. Documentaci\'on.
+  \end{itemize}
+  \item 16-04-2018:
+  \begin{itemize}
+    \item 2 horas - Comentarios en el codigo. Documentaci\'on.
+  \end{itemize}
+  \item 19-04-2018:
+  \begin{itemize}
+    \item 2 horas - Documentaci\'on.
   \end{itemize}
 \end{itemize}
-Total de horas trabajadas: 8 horas.
+Total de horas trabajadas: 18 horas.
 
 \subsection{Janis Cervantes}
 \begin{itemize}
@@ -122,19 +130,23 @@ Total de horas trabajadas: 39 horas.
 
 \subsection{Luis Castillo}
 \begin{itemize}
-  \item
+  \item Investigación sobre uso de la libreria FUSE 2 h
+  \item Investigación de como implementar mkfs 2 h
 \end{itemize}
-Total de horas trabajadas: X horas.
+Total de horas trabajadas: 4 horas.
 
 \section{Comentarios finales}
-\begin{itemize}
-  \item 
-\end{itemize}
+  El estado actual del proyecto es el siguiente:
+  \begin{itemize}
+    \item Las funcionalidades de la librer\'ia fueron implementadas correctamente.
+    \item El sistema de archivos puede ser montado correctamente mediante las intrucciones se\~naladas en la secci\'on de montaje.
+    \item Los procesos de \emph{msck} (incluyendo la funcionalidad de encriptaci\'on) y \emph{fsck} no pudieron ser implementados.
+  \end{itemize}
 
 \section{Conclusiones}
 \begin{itemize}
   \item Se lograron implementar la librería de las operaciones fuse y montar el sistema de archivos, si se utiliza el comando df se puede ver los puntos de montaje y el tipo de file system que tiene por lo que sí se pudo montar correctamente ya que el sistema operativo lo reconoce como este. 
-  /item Se logró entender mejor el funcionamiento de un sistema de archivos de la estructura de las operaciones de los comandos que usamos al manipular estos. 
+  \item Se logró entender mejor el funcionamiento de un sistema de archivos de la estructura de las operaciones de los comandos que usamos al manipular estos. 
 \end{itemize}
 
 \begin{thebibliography}{99}
