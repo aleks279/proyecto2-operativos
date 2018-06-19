@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.7.30)  19 JUN 2018 11:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.7.30)  19 JUN 2018 11:48
 entering extended mode
 **./documentation.tex
 (documentation.tex
@@ -213,23 +213,23 @@ Missing character: There is no ­ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ³ in font cmr10!
  [3]
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
 []\OT1/cmr/m/n/10 GitHub. (2018). fntlnz/fuse-example. [on-line] Avail-able at:
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 []\OT1/cmr/m/n/10 GitHub. (2018). lib-fuse/lib-fuse. [on-line] Avail-able at:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--157
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
 []\OT1/cmr/m/n/10 Engineering.facile.it. (2018). Write a filesys-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--157
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
 \OT1/cmr/m/n/10 tem with FUSE. [on-line] Avail-able at:
  []
 
@@ -251,7 +251,7 @@ nts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
 m/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 tt10.pfb>
-Output written on documentation.pdf (5 pages, 112571 bytes).
+Output written on documentation.pdf (5 pages, 112612 bytes).
 PDF statistics:
  50 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
